@@ -1,0 +1,79 @@
+:root {
+  --color-border-light: #573f73;
+  --color-highlight: #8d63b3;
+  --color-text-primary: #f1f1f1;
+  --color-bg-secondary: #190831;
+}
+
+.progress-circle-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.progress-circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.progress-circle-stroke {
+  transition: stroke-dashoffset 0.5s ease;
+  stroke-linecap: round;
+}
+
+.badge-img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-hover-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: rgba(25, 8, 49, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.progress-circle-wrapper:hover .progress-hover-overlay {
+  opacity: 1;
+}
+
+.progress-percent {
+  position: absolute;
+  color: var(--color-text-primary);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  opacity: 0; /* Caché par défaut */
+  transition: opacity 0.3s ease;
+}
+
+/* S'affiche au hover */
+.progress-circle-wrapper:hover .progress-percent {
+  opacity: 1;
+}

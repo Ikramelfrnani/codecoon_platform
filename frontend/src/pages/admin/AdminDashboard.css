@@ -1,0 +1,98 @@
+/* Style général des petites cards */
+.card-waera {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.card-waera:hover {
+  transform: translateY(-5px);
+}
+
+/* Titre et valeur dans les cards */
+.card-waera h2 {
+  font-size: 2rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  margin-top: 1.8%;
+}
+
+.card-waera p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #560875;
+  margin: 0;
+}
+
+/* Alignement horizontal des cards */
+.cards-row-waera {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  margin-left: 16px;
+}
+.charts-side-by-side {
+  display: flex;
+  flex-wrap: wrap; /* permet le retour à la ligne si l'écran est trop petit */
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.chart-wrapper-waera {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* 👈 force la même hauteur pour les deux */
+}
+
+.update-button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* aligne le bouton à droite */
+  margin-bottom: 1rem;
+}
+.chart-header-waera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/* Pour le titre */
+.chart-header-waera h3 {
+  margin: 0;
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-left: 57px;
+  /* margin-bottom: -50px; */
+}
+
+/* Bouton comme avant */
+.btn-waera {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.btn-waera:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

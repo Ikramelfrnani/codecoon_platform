@@ -1,0 +1,32 @@
+.code-editor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #16042F;
+  color: white;
+}
+
+.editors-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.editor-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.output-panel {
+  background-color: #666468;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.output-frame {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 250px;
+}

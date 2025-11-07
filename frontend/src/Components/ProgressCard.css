@@ -1,0 +1,81 @@
+.progress-card {
+  background-color: #16042F;                          /* fond sombre */
+  border-radius: 16px;
+  padding: 16px 24px;
+  width: 80%;
+  color: #f0f0f0;                                     /* texte clair pour contraste */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  border: 1px solid #2f0b50;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.progress-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b199d4; /* violet doux */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-left: -22px;
+}
+
+.language-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: -22px;
+}
+
+.badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #542e7a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+  width: 85%;
+  max-width: 350px;    
+  background: #2d1b47;
+  height: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(to right, #8ab4f8, #813ffc, #2c0c66);
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  border-radius: 8px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #ccc;
+}
