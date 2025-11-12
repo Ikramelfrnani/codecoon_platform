@@ -4,7 +4,7 @@ A full-stack e-learning platform for programming with gamification elements, pro
 
 ##  Description
 
-CodeCoon is an interactive coding education platform that makes learning programming languages engaging through gamification. Students earn coins, complete quizzes, and collect badges while admins get detailed analytics on learners progress and platform engagement.
+CodeCoon is an interactive coding education platform that makes learning programming languages engaging through gamification. Students earn coins, complete quizzes, and collect badges while admin get detailed analytics on learners progress and platform engagement.
 
 ##  Tech Stack
 
